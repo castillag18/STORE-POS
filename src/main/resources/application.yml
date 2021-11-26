@@ -1,0 +1,10 @@
+spring:
+  jpa:
+  hibernate:
+    ddl-auto: create-drop
+  show-sql: true
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=DB_POS_VENTA;
+    username: admin
+    password: 1234admin
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
