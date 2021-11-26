@@ -5,7 +5,9 @@ import com.store.pos.model.Articulo;
 import com.store.pos.model.dto.ArticuloDTO;
 import com.store.pos.services.ArticuloServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class DefaultArticuloService implements ArticuloServices {
 
     @Autowired
@@ -26,5 +28,11 @@ public class DefaultArticuloService implements ArticuloServices {
                 .build();
         articuloRepository.save(articulo);
     }
+
+    @Override
+    public void editarArticulo() {
+
+    }
+
 
 }
