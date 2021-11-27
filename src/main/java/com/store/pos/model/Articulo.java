@@ -17,13 +17,13 @@ import javax.persistence.Table;
 public class Articulo {
     @Id
     @Column (name="id_articulo")
-    private Long id;
+    private Long idArticulo;
 
     @Column (name="cod_articulo")
     private String CodArticulo;
 
     @Column (name = "nombre_articulo")
-    private String nombre;
+    private String nombreArticulo;
 
     @Column (name = "presentacion")
     private String presentacion;

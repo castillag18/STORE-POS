@@ -1,12 +1,9 @@
 package com.store.pos.model.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Column;
 
+@Builder
 @Getter
 @Setter
 @AllArgsConstructor
@@ -14,12 +11,12 @@ import javax.persistence.Column;
 public class ArticuloDTO {
 
     private Long id;
-    private String CodArticulo;
+    private String codArticulo;
     private String nombre;
     private String presentacion;
     private Integer costo;
     private Integer iva;
-    private String CodExterno;
+    private String codExterno;
     private String grupo;
     private Integer ipc;
 

@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ArticuloRepository extends JpaRepository<Articulo, Long>{
 
-
+    void deleteById(Long aLong);
 }
