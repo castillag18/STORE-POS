@@ -19,7 +19,7 @@ public class DefaultArticuloService implements ArticuloServices {
     @Override
     public void crearArticulo(ArticuloDTO articuloDTO) {
         Articulo articulo = Articulo.builder()
-                .idArticulo(articuloDTO.getId())
+                .idArticulo(articuloDTO.getIdArticulo())
                 .CodArticulo(articuloDTO.getCodArticulo())
                 .nombreArticulo(articuloDTO.getNombre())
                 .CodExterno(articuloDTO.getCodExterno())
@@ -35,7 +35,7 @@ public class DefaultArticuloService implements ArticuloServices {
     @Override
     public void editarArticulo(ArticuloDTO articuloDTO) {
         Articulo articulo = Articulo.builder()
-                .idArticulo(articuloDTO.getId())
+                .idArticulo(articuloDTO.getIdArticulo())
                 .CodArticulo(articuloDTO.getCodArticulo())
                 .nombreArticulo(articuloDTO.getNombre())
                 .CodExterno(articuloDTO.getCodExterno())
@@ -59,7 +59,7 @@ public class DefaultArticuloService implements ArticuloServices {
       List <ArticuloDTO> articuloDTO = new ArrayList<>();
       articulo.forEach(articulo1 -> {
           ArticuloDTO articuloDTO1 = ArticuloDTO.builder()
-                     .id(articulo1.getIdArticulo())
+                     .idArticulo(articulo1.getIdArticulo())
                      .nombre(articulo1.getNombreArticulo())
                      .codArticulo(articulo1.getCodArticulo())
                      .costo(articulo1.getCosto())

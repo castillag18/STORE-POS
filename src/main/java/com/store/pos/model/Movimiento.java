@@ -38,8 +38,8 @@ public class Movimiento {
     private Long movimientos;
 
    // @Column(name = "fecha_regristro")
-    private Integer fechaRegristro;
+    private String fechaRegristro;
 
     //@Column(name = "fecha_documento")
-    private Integer fechaDocumento;
+    private String fechaDocumento;
 }

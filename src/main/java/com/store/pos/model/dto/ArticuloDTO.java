@@ -10,7 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 public class ArticuloDTO {
 
-    private Long id;
+    private Long idArticulo;
     private String codArticulo;
     private String nombre;
     private String presentacion;
