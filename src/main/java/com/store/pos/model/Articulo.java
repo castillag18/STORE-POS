@@ -20,7 +20,7 @@ public class Articulo {
     private Long idArticulo;
 
     @Column (name="cod_articulo")
-    private String CodArticulo;
+    private String codArticulo;
 
     @Column (name = "nombre_articulo")
     private String nombreArticulo;
@@ -35,7 +35,7 @@ public class Articulo {
     private Integer iva;
 
     @Column (name = "codigo_externo")
-    private String CodExterno;
+    private String codExterno;
 
     @Column (name = "grupo")
     private String grupo;
