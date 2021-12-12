@@ -15,7 +15,7 @@ import java.util.List;
 public class ArticuloController {
 
     @Autowired
-    ArticuloServices articuloservices;
+    private ArticuloServices articuloservices;
 
     @PostMapping("/creararticulo")
     public ResponseEntity <String> crear (@RequestBody ArticuloDTO articuloDTO){

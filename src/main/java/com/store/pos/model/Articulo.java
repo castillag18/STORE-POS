@@ -40,7 +40,9 @@ public class Articulo {
     @Column (name = "grupo")
     private String grupo;
 
+    @Column(name = "cantidad_articulos")
+    private Long cantidadArticulo;
+
     @Column (name = "ipc")
     private Integer ipc;
-
 }

@@ -26,12 +26,14 @@ public class DefaultArticuloService implements ArticuloServices {
     @Override
     public void crearArticulo(ArticuloDTO articuloDTO) {
         Articulo articulo = articuloAssembler.convertDtoToModel(articuloDTO);
+
         articuloRepository.save(articulo);
     }
 
     @Override
     public void editarArticulo(ArticuloDTO articuloDTO) {
         Articulo articulo = articuloAssembler.convertDtoToModel(articuloDTO);
+
         articuloRepository.save(articulo);
     }
 
@@ -46,6 +48,7 @@ public class DefaultArticuloService implements ArticuloServices {
       List <ArticuloDTO> articuloDTO = new ArrayList<>();
       articulo.forEach(articulo1 -> {
           ArticuloDTO articuloDTO1 = articuloAssembler.convertModelToDto(articulo1);
+
           articuloDTO.add(articuloDTO1);
       });
       return articuloDTO;
