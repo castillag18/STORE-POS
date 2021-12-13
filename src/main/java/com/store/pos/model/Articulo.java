@@ -2,10 +2,8 @@ package com.store.pos.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.UUID;
 
 @Builder
 @Table(name = "ARTICULOS")
@@ -17,7 +15,7 @@ import javax.persistence.Table;
 public class Articulo {
     @Id
     @Column (name="id_articulo")
-    private Long idArticulo;
+    private String idArticulo;
 
     @Column (name="cod_articulo")
     private String codArticulo;
@@ -45,4 +43,9 @@ public class Articulo {
 
     @Column (name = "ipc")
     private Integer ipc;
+
+    @PrePersist
+    public void onCreate (){
+        this.idArticulo = UUID.randomUUID().toString();
+    }
 }
